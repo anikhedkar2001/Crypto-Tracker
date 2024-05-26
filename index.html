@@ -6,51 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Tracker</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-
-        div.container{
-            background-color: #a4b9bea6;;
-            width: 500px;
-            border: 10px solid #000000;
-            margin: auto;
-            padding: 10px;
-        } 
-
-        .row {
-            text-align: center;
-        }
-
-        .form-group{
-            padding: 10px;
-        }
-
-        .row-2 {
-            padding: 10px 0px 5px 178px;
-        }
-
-        .btn{
-            padding: 4px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .btn:hover{
-            background-color: rgb(131, 107, 169);
-        }
-
-        .bottom{
-            display: flex;
-            margin: 20px 110px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="row justify-content-center ">
+        <div class="row justify-content-center">
             <h1 class="header1">Crypto Tracker</h1>
             <h3 class="header3">By AniKhedkar</h3>
             <div class="main1">
@@ -68,23 +29,19 @@
                                 </select>
                             </div>
                         </div>
-                        
-                        <button type="submit" class="submit">Get Price</button>
+                        <button type="submit" class="btn submit">Get Price</button>
                     </form>
                 </div>
             </div>
             <div class="bottom">
                 <table class="tableresult" border="1px" id="tableResult">
-        
+                    <!-- Results will be displayed here -->
                 </table>
-                
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
